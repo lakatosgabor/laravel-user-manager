@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+// tailwind ---------------------------- >
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+// base -------------------------------- >
+@layer base {
+  .navigation {
+    @apply dark:text-gray-100
+        dark:bg-gray-950
+        text-gray-500
+        bg-gray-200
+        z-10;
+  }
+}
+
+// navbar ------------------------------ >
+.nav-header {
+  @apply items-center
+    navigation
+    flex
+    h-20;
+}
+
+.nav-header__inner {
+  @apply items-center
+    ml-auto
+    flex;
+}
+
+// sidebar ----------------------------- >
+.sidebar {
+  @apply sm:min-h-screen
+    min-h-screen
+    sm:flex-col
+    sm:flex
+    fixed;
+}
+
+.sidebar-upper {
+  @apply justify-center
+    items-center
+    inline-flex
+    navigation
+    h-20 w-20;
+}
+
+.sidebar-body {
+  @apply justify-between
+    navigation
+    flex-grow
+    flex-col
+    flex;
+}
+
+.sidebar-nav {
+  @apply space-y-4
+    flex-col
+    flex
+    m-2;
+}
+
+.nav-item {
+  @apply dark:hover:bg-gray-600
+    dark:hover:text-white
+    hover:text-gray-600
+    hover:bg-white
+    cursor-pointer
+    justify-center
+    items-center
+    inline-flex
+    rounded
+    p-4;
+}
+
+// footer ------------------------------ >
+.footer {
+  @apply footer-center
+    navigation
+    bottom-0
+    fixed
+    p-4;
+}
+
+// cards
+.app-card {
+  @apply dark:text-gray-300
+    dark:bg-gray-700
+    border-gray-300
+    text-gray-600
+    shadow m-4
+    py-4 px-2
+    bg-white
+    rounded;
+}
+
+.auth-card {
+  @apply dark:text-gray-100
+    dark:bg-gray-400
+    overflow-hidden
+    text-gray-600
+    sm:max-w-md
+    shadow-md
+    px-6 py-4
+    bg-white
+    rounded
+    w-full
+    mt-6;
+}
+
+// layouts ----------------------------- >
+.auth-layout {
+  @apply dark:text-gray-300
+    sm:justify-center
+    dark:bg-gray-500
+    text-gray-700
+    items-center
+    min-h-screen
+    antialiased
+    bg-gray-200
+    flex-col
+    sm:pt-0
+    pt-6
+    flex;
+}
+
+.guest-layout {
+  @apply text-gray-300
+    bg-gray-900
+    antialiased;
+}
+
+// app --------------------------------- >
+.app-body {
+  @apply dark:bg-gray-800
+    text-gray-600
+    bg-gray-300
+    pl-20 pb-14
+    flex-grow;
+}
+
+.app-wrapper {
+  @apply min-h-screen
+    flex;
+}
+
+// misc -------------------------------- >
+.btn {
+  @apply btn-sm
+    rounded;
+}
+
+.pagination-item {
+  @apply relative
+    border-gray-300
+    items-center
+    font-medium
+    inline-flex
+    px-4 py-2
+    leading-5
+    text-sm
+    border
+
+    dark:border-gray-900
+    dark:text-gray-100
+    dark:bg-gray-800;
+}
+
+@import 'fonts';
+@import 'app';
