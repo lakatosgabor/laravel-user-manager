@@ -1,11 +1,9 @@
-# Full Stack Boilerplate
+# Laravel User Manager
 
-> The following technologies were used to create this full-stack development boilerplate
-
-- Vue 3 + Vite + Vitest
-- Laravel+ Splade
-- Element Plus
-- PrimeIcons
+- [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) + [Vitest](https://vitest.dev/)
+- [Laravel](https://laravel.com/) + [Splade](https://splade.dev/)
+- [Element Plus](https://element-plus.org/en-US/)
+- [PrimeIcons](https://www.primefaces.org/showcase/icons.xhtml)
 
 ## Installation
 
