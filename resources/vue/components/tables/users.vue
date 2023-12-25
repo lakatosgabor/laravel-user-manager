@@ -48,13 +48,8 @@ const props = defineProps({
           {{ daysAgo(scope.row.created_at) }}
         </template>
       </el-table-column>
-      <el-table-column label="Updated">
-        <template #default="scope">
-          {{ daysAgo(scope.row.updated_at) }}
-        </template>
-      </el-table-column>
     </el-table-column>
-    <el-table-column width="75">
+    <el-table-column width="70">
       <template #header>
         <div class="text-center">Status</div>
       </template>
@@ -73,7 +68,7 @@ const props = defineProps({
         </div>
       </template>
     </el-table-column>
-    <el-table-column width="110">
+    <el-table-column width="130">
       <template #header>
         <div class="text-center">Actions</div>
       </template>
